@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.stream.StreamSupport;
 
 public class AsteriskPrint {
     public static void main(String args[]) {

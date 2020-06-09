@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CalendarView/CalendarView.iml" filepath="$PROJECT_DIR$/CalendarView/CalendarView.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module_4_HW.iml" filepath="$PROJECT_DIR$/.idea/Module_4_HW.iml" />
     </modules>
   </component>

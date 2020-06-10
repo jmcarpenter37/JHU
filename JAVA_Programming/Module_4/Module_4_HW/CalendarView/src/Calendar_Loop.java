@@ -854,7 +854,7 @@ public class Calendar_Loop {
         int month_in;
         int year_in;
         // Enter a year
-        System.out.println("Enter a year(Ex. 2012");
+        System.out.println("Enter a year(Ex. 2012)");
         // Scanner class for year_in
         Scanner year_input = new Scanner(System.in);
         year_in = year_input.nextInt();

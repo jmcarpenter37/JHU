@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Calendar_Print {
-    /*
+public class Calendar_Loop {
+        /*
     GOAL:
 
     Write a program that prompts the user to enter a month (1-12) and a year (e.g., 2012),
@@ -812,14 +812,14 @@ public class Calendar_Print {
         {
             if(y % 100 == 0)
             {
-               if (y%400 == 0)
-               {
-                   return true;
-               }
-               else
-                   {
-                   return false;
-               }
+                if (y%400 == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -853,17 +853,15 @@ public class Calendar_Print {
         // Begin routine
         int month_in;
         int year_in;
-        // Enter a month
-        System.out.println("Enter a month from 1-12(Ex. 1 is January)");
-        // Scanner class for month_in;
-        Scanner month_input = new Scanner(System.in);
-        month_in = month_input.nextInt();
         // Enter a year
         System.out.println("Enter a year(Ex. 2012");
         // Scanner class for year_in
         Scanner year_input = new Scanner(System.in);
         year_in = year_input.nextInt();
-        printMonthCalendar(month_in, year_in);
+        for(month_in=1;month_in<=12;month_in++)
+        {
+            printMonthCalendar(month_in, year_in);
+        }
 
 
     }

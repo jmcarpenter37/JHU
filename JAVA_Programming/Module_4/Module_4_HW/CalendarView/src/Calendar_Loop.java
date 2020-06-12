@@ -129,7 +129,7 @@ public class Calendar_Loop {
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_____________________________________");
-                    System.out.println("Mon  Tues  Wed  Thurs  Fri  Sat  Sun");
+                    System.out.println("Mon   Tues  Wed  Thurs  Fri  Sat  Sun");
                     break;
                 }
 
@@ -670,25 +670,25 @@ public class Calendar_Loop {
                 System.out.println("29  30   " + num_days_in_month);
                 break;
             case 4: // April
-                System.out.println(" 1    2    3    4   5   6   7");
-                System.out.println(" 8    9   10   11  12  13  14");
-                System.out.println("15   16   17   18  19  20  21");
-                System.out.println("22   23   24   25  26  27  28");
+                System.out.println(" 1   2    3    4   5   6   7");
+                System.out.println(" 8   9   10   11  12  13  14");
+                System.out.println("15  16   17   18  19  20  21");
+                System.out.println("22  23   24   25  26  27  28");
                 System.out.println("29   " + num_days_in_month);
                 break;
             case 5: // May
-                System.out.println(" 1   2   3   4   5   6    7");
-                System.out.println(" 8   9  10  11  12  13   14");
-                System.out.println("15  16  17  18  19  20   21");
-                System.out.println("22  23  24  25  26  27   28");
+                System.out.println(" 1   2   3    4    5   6    7");
+                System.out.println(" 8   9  10   11   12  13   14");
+                System.out.println("15  16  17   18   19  20   21");
+                System.out.println("22  23  24   25   26  27   28");
                 System.out.println("29  30  " + num_days_in_month);
                 break;
             case 6: // June
-                System.out.println(" 1    2    3    4    5   6   7");
-                System.out.println(" 8    9   10   11   12  13  14");
-                System.out.println("15   16   17   18   19  20  21");
-                System.out.println("22   23   24   25   26  27  28");
-                System.out.println("29   " + num_days_in_month);
+                System.out.println(" 1   2    3   4    5   6   7");
+                System.out.println(" 8   9   10  11   12  13  14");
+                System.out.println("15  16   17  18   19  20  21");
+                System.out.println("22  23   24  25   26  27  28");
+                System.out.println("29  " + num_days_in_month);
                 break;
             case 7: // July
                 System.out.println(" 1   2   3   4   5   6   7");

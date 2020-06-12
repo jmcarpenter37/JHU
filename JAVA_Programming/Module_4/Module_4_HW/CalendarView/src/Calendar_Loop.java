@@ -129,7 +129,7 @@ public class Calendar_Loop {
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_____________________________________");
-                    System.out.println("Mon   Tues  Wed  Thurs  Fri  Sat  Sun");
+                    System.out.println("Mon  Tues  Wed  Thurs  Fri  Sat  Sun");
                     break;
                 }
 
@@ -137,74 +137,74 @@ public class Calendar_Loop {
                 if (month_out.matches("January")) {
                     System.out.println("        January " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("February")) {
                     System.out.println("        February " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
 
                 }
                 if (month_out.matches("March")) {
                     System.out.println("        March " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("April")) {
                     System.out.println("        April " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("May")) {
                     System.out.println("        May " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("June")) {
                     System.out.println("        June " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("July")) {
                     System.out.println("        July " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("August")) {
                     System.out.println("        August " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("September")) {
                     System.out.println("        September " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("October")) {
                     System.out.println("        October " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("November")) {
                     System.out.println("        November " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Tues Wed Thurs Fri Sat Sun Mon");
+                    System.out.println("Tues  Wed  Thurs  Fri  Sat  Sun  Mon");
                     break;
                 }
 
@@ -212,148 +212,148 @@ public class Calendar_Loop {
                 if (month_out.matches("January")) {
                     System.out.println("        January " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("February")) {
                     System.out.println("        February " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
 
                 }
                 if (month_out.matches("March")) {
                     System.out.println("        March " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("April")) {
                     System.out.println("        April " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("May")) {
                     System.out.println("        May " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("June")) {
                     System.out.println("        June " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("July")) {
                     System.out.println("        July " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("August")) {
                     System.out.println("        August " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("September")) {
                     System.out.println("        September " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("October")) {
                     System.out.println("        October " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("November")) {
                     System.out.println("        November " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Wed Thurs Fri Sat Sun Mon Tues");
+                    System.out.println("Wed  Thurs  Fri  Sat  Sun  Mon  Tues");
                     break;
                 }
             case 4: // When the start day is a Thursday
                 if (month_out.matches("January")) {
                     System.out.println("        January " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("February")) {
                     System.out.println("        February " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
 
                 }
                 if (month_out.matches("March")) {
                     System.out.println("        March " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("April")) {
                     System.out.println("        April " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("May")) {
                     System.out.println("        May " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("June")) {
                     System.out.println("        June " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("July")) {
                     System.out.println("        July " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("August")) {
                     System.out.println("        August " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("September")) {
                     System.out.println("        September " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("October")) {
                     System.out.println("        October " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("November")) {
                     System.out.println("        November " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Thurs Fri Sat Sun Mon Tues Wed");
+                    System.out.println("Thurs  Fri  Sat  Sun  Mon  Tues  Wed");
                     break;
                 }
 
@@ -361,222 +361,222 @@ public class Calendar_Loop {
                 if (month_out.matches("January")) {
                     System.out.println("        January " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("February")) {
                     System.out.println("        February " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
 
                 }
                 if (month_out.matches("March")) {
                     System.out.println("        March " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("April")) {
                     System.out.println("        April " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("May")) {
                     System.out.println("        May " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("June")) {
                     System.out.println("        June " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("July")) {
                     System.out.println("        July " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("August")) {
                     System.out.println("        August " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("September")) {
                     System.out.println("        September " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("October")) {
                     System.out.println("        October " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("November")) {
                     System.out.println("        November " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Fri Sat Sun Mon Tues Wed Thurs");
+                    System.out.println("Fri  Sat  Sun  Mon  Tues  Wed  Thurs");
                     break;
                 }
             case 6: // When the start day is Saturday
                 if (month_out.matches("January")) {
                     System.out.println("        January " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("February")) {
                     System.out.println("        February " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
 
                 }
                 if (month_out.matches("March")) {
                     System.out.println("        March " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("April")) {
                     System.out.println("        April " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("May")) {
                     System.out.println("        May " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("June")) {
                     System.out.println("        June " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("July")) {
                     System.out.println("        July " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("August")) {
                     System.out.println("        August " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("September")) {
                     System.out.println("        September " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("October")) {
                     System.out.println("        October " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("November")) {
                     System.out.println("        November " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sat Sun Mon Tues Wed Thurs Fri");
+                    System.out.println("Sat  Sun  Mon  Tues  Wed  Thurs  Fri");
                     break;
                 }
             case 7: // Whe the start start day is a Sunday
                 if (month_out.matches("January")) {
                     System.out.println("        January " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("February")) {
                     System.out.println("        February " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
 
                 }
                 if (month_out.matches("March")) {
                     System.out.println("        March " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("April")) {
                     System.out.println("        April " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("May")) {
                     System.out.println("        May " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("June")) {
                     System.out.println("        June " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("July")) {
                     System.out.println("        July " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("August")) {
                     System.out.println("        August " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("September")) {
                     System.out.println("        September " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("October")) {
                     System.out.println("        October " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("November")) {
                     System.out.println("        November " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
                 if (month_out.matches("December")) {
                     System.out.println("        December " + y);
                     System.out.println("_______________________________");
-                    System.out.println("Sun Mon Tues Wed Thurs Fri Sat");
+                    System.out.println("Sun  Mon  Tues  Wed  Thurs  Fri  Sat");
                     break;
                 }
         }

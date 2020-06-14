@@ -136,6 +136,12 @@ public class TheBigRace {
                 System.out.println();
 
             }
+            else if((hare_pos >= 50 && tortoise_pos >= 50) && (hare_pos == tortoise_pos))
+            {
+                System.out.println("It's a tie!");
+                System.out.println("The Tortoise ended in position: " + tortoise_pos);
+                System.out.println("The Hare ended in position: " + hare_pos);
+            }
 
 
 

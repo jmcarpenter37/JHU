@@ -84,9 +84,11 @@ public class TheBigRace
         while(tortoise_pos <= 50 && hare_pos <= 50)
         {
             int tortoise_ran_num;
-            // Tortoise goes
+            int hare_ran_num;
+            // Tortoise makes a move
             // 1. Generate the tortoises number
             tortoise_ran_num = tortoiseRandomNumberGenerator();
+            // Make updates to the Tortoise position
             if (tortoise_ran_num <= 5)
             {
                 for(tortoise_loop_pos=1;tortoise_loop_pos<=tortoise_ran_num;tortoise_loop_pos++)
@@ -109,7 +111,7 @@ public class TheBigRace
                 if(tortoise_pos <= Math.abs(tortoise_ran_num))
                 {
                     tortoise_pos = 1;
-                    System.out.print("H");
+                    System.out.print("T");
                 }
                 else if(tortoise_pos > Math.abs(tortoise_ran_num))
                 {
@@ -117,16 +119,23 @@ public class TheBigRace
                     tortoise_pos = tortoise_pos + tortoise_ran_num;
                     for (temp_tort_low=1;temp_tort_low<=tortoise_pos;temp_tort_low++)
                     {
-                        System.out.print("H");
+                        System.out.print("T");
                     }
                 }
+                // Hare makes a move
+                //1. generate the hare's number here.
+                hare_ran_num = hareRandomNumberGenerator();
             }
-            // Hare move goes here
-            //1. generate the hare's number here.
-
-            // Get your checks in
+            // We need the following checks of their positions
+            // 1. Are their positions equal during the race but not in position 50? OUCH
+            // 2. Is the position of the Tortoise >= 50 while the Hare's position is less than 50? The Tortoise has was
+            // 3. Is the position of Hare >= 50 while the Tortoise's position is less than 50? The Hare has won
+            // 4. Are their positions equal? OUCH! They landed on the same space
+            // 5. Are their positions equal AND are their positions == 50? Then they crossed the line at the same time.
+            // 6. Are both their positons >= 50? If so then check who's position is bigger. That should be the winner of the race.
             if (tortoise_pos == 50 && hare_pos == 50)
             {
+                System.out.println();
                 System.out.println("IT WAS A TIE!");
                 System.exit(0);
             }
@@ -136,15 +145,36 @@ public class TheBigRace
                 System.out.print("Tortoise wins!");
                 System.exit(0);
             }
-//        else if(tortoise_pos >= 50 && hare_pos < 50)
-//        {
-//            System.out.println("The tortoise wins!");
-//            System.exit(0);
-//        }
             else if(tortoise_pos < 50 && hare_pos >= 50)
             {
-                System.out.println("The hare wins!");
+                System.out.println();
+                System.out.println("Hare wins!");
                 System.exit(0);
+            }
+            else if(tortoise_pos == hare_pos)
+            {
+                System.out.println("OUCH! The Tortoise and Hare landed on the same space.");
+            }
+            else if((tortoise_pos == hare_pos) && (tortoise_pos == 50 && hare_pos == 50))
+            {
+                System.out.println();
+                System.out.println("It was a tie!");
+            }
+            else if(tortoise_pos > 50 && hare_pos > 50)
+            {
+                // tortoise win
+                if(tortoise_pos > hare_pos)
+                {
+                    System.out.println();
+                    System.out.println("The Tortoise wins!");
+                    System.exit(0);
+                }
+                if (hare_pos > tortoise_pos)
+                {
+                    System.out.println();
+                    System.out.println("The Hare wins!");
+                    System.exit(0);
+                }
             }
 
 

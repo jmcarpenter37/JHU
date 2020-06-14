@@ -21,7 +21,7 @@ public class TemperatureConversion {
     public static void main(String[] args) {
         int input_val;
         // Init Scanner for select C to F or F to C
-        System.out.println("Select 1 for Fahrenheit to Celsius or 2 for Celsius to Fahrenheit: ");
+        System.out.println("Select 1 for Fahrenheit to Celsius or 2 for Celsius to Fahrenheit or 3 to quit: ");
         Scanner user_input = new Scanner(System.in);
         input_val = user_input.nextInt();
         if (input_val == 1) {
@@ -39,11 +39,13 @@ public class TemperatureConversion {
             cel_input = cel_scanner.nextDouble();
             cel_to_fahr(cel_input);
 
+        } else if (input_val == 3) {
+            System.out.println("Quitting program. Goodbye!");
+            System.exit(0);
+
         } else {
             System.out.println("That wasn't a valid selection");
+            System.exit(1);
         }
-        // if statements
-
-        // Sys exit
     }
 }

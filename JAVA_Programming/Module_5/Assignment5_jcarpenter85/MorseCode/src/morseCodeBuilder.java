@@ -53,7 +53,7 @@ public class morseCodeBuilder
                 Scanner user_morse = new Scanner(System.in);
                 String morse_input = user_morse.nextLine();
                 //System.out.println(morse_input);
-                String in[] = morse_input.split(" ");
+                String in[] = morse_input.split(" ");    
                 for(int i=0;i<in.length;i++)
                 {
                     //System.out.print("The length of the input is " + in.length);

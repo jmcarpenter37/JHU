@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Assignment5_jcarpenter85.iml" filepath="$PROJECT_DIR$/.idea/Assignment5_jcarpenter85.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MorseCode/MorseCode.iml" filepath="$PROJECT_DIR$/MorseCode/MorseCode.iml" />
+    </modules>
+  </component>
+</project>

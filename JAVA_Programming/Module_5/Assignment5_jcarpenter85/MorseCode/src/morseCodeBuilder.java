@@ -136,6 +136,8 @@ public class morseCodeBuilder {
         /*
         The user will pass in english here
          */
+        String alpha_morse[] = {};
+        String nums_morse[] = {};
 
     }
 

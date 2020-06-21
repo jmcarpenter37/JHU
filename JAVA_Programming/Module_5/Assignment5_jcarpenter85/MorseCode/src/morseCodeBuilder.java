@@ -132,12 +132,164 @@ public class morseCodeBuilder {
 
     }
 
-    public static void english_to_morse() {
+    public static void english_to_morse(String val) {
         /*
         The user will pass in english here
          */
-        String alpha_morse[] = {};
-        String nums_morse[] = {};
+        String alpha_morse[] = { ".- ", "-... ", "-.-. ", "-.. ", ". ", "..-. ", "--. ", ".... ", ".. ",
+                ".--- ", "-.- ", ".-.. ", "-- ", "-. ", "--- ", ".---. ", "--.- ", ".-. ",
+                "... ", "- ", "..- ", "...- ", ".-- ", "-..- ", "-.-- ", "--.. ", ".---- ",
+                "..--- ", "...-- ", "....- ", "..... ", "-.... ", "--... ", "---.. ", "----. ",
+                "----- ", "--..-- ", ".-.-.- ", "..--.. ", " | " };;
+        String nums_morse[] = {".--- ","..--- ","...-- ","....- ","..... ","-.... ","--... ","---.. ","----. ","----- "};
+        // Begin checking for english characters here
+        if(val.contentEquals("A"))
+        {
+            System.out.print(alpha_morse[0]);
+        }
+        if(val.contentEquals("B"))
+        {
+            System.out.print(alpha_morse[1]);
+        }
+        if (val.contentEquals("C"))
+        {
+            System.out.print(alpha_morse[2]);
+        }
+        if(val.contentEquals("D"))
+        {
+            System.out.print(alpha_morse[3]);
+        }
+        if(val.contentEquals("E"))
+        {
+            System.out.print(alpha_morse[4]);
+        }
+        if (val.contentEquals("F"))
+        {
+            System.out.print(alpha_morse[5]);
+        }
+        if(val.contentEquals("G"))
+        {
+            System.out.print(alpha_morse[6]);
+        }
+        if(val.contentEquals("H"))
+        {
+            System.out.print(alpha_morse[7]);
+        }
+        if (val.contentEquals("I"))
+        {
+            System.out.print(alpha_morse[8]);
+        }
+        if(val.contentEquals("J"))
+        {
+            System.out.print(alpha_morse[9]);
+        }
+        if(val.contentEquals("K"))
+        {
+            System.out.print(alpha_morse[10]);
+        }
+        if (val.contentEquals("L"))
+        {
+            System.out.print(alpha_morse[11]);
+        }
+        if(val.contentEquals("M"))
+        {
+            System.out.print(alpha_morse[12]);
+        }
+        if(val.contentEquals("N"))
+        {
+            System.out.print(alpha_morse[13]);
+        }
+        if(val.contentEquals("O"))
+        {
+            System.out.print(alpha_morse[14]);
+        }
+        if (val.contentEquals("P"))
+        {
+            System.out.print(alpha_morse[15]);
+        }
+        if(val.contentEquals("Q"))
+        {
+            System.out.print(alpha_morse[16]);
+        }
+        if(val.contentEquals("R"))
+        {
+            System.out.print(alpha_morse[17]);
+        }
+        if (val.contentEquals("S"))
+        {
+            System.out.print(alpha_morse[18]);
+        }
+        if(val.contentEquals("T"))
+        {
+            System.out.print(alpha_morse[19]);
+        }
+        if(val.contentEquals("U"))
+        {
+            System.out.print(alpha_morse[20]);
+        }
+        if (val.contentEquals("V"))
+        {
+            System.out.print(alpha_morse[21]);
+        }
+        if(val.contentEquals("W"))
+        {
+            System.out.print(alpha_morse[22]);
+        }
+        if(val.contentEquals("X"))
+        {
+            System.out.print(alpha_morse[23]);
+        }
+        if(val.contentEquals("Y"))
+        {
+            System.out.print(alpha_morse[24]);
+        }
+        if(val.contentEquals("Z"))
+        {
+            System.out.print(alpha_morse[25]);
+        }
+        // Get numbers
+        if(val.contentEquals("1"))
+        {
+            System.out.print(nums_morse[0]);
+        }
+        if (val.contentEquals("2"))
+        {
+            System.out.print(alpha_morse[1]);
+        }
+        if(val.contentEquals("3"))
+        {
+            System.out.print(alpha_morse[2]);
+        }
+        if(val.contentEquals("4"))
+        {
+            System.out.print(alpha_morse[3]);
+        }
+        if(val.contentEquals("5"))
+        {
+            System.out.print(alpha_morse[4]);
+        }
+        if(val.contentEquals("6"))
+        {
+            System.out.print(alpha_morse[5]);
+        }
+        if(val.contentEquals("7"))
+        {
+            System.out.print(alpha_morse[6]);
+        }
+        if(val.contentEquals("8"))
+        {
+            System.out.print(alpha_morse[7]);
+        }
+        if(val.contentEquals("9"))
+        {
+            System.out.print(alpha_morse[8]);
+        }
+        if(val.contentEquals("0"))
+        {
+            System.out.print(alpha_morse[9]);
+        }
+
+
 
     }
 
@@ -168,15 +320,15 @@ public class morseCodeBuilder {
                 System.out.println("Type in your sentence in english below:");
                 Scanner user_english = new Scanner(System.in);
                 String english_input = user_english.nextLine();
-                char eng[] = new char[english_input.length()];
+                //char eng[] = new char[english_input.length()];
                 System.out.println(english_input);
-                for (int i = 0; i < english_input.length(); i++) {
-                    System.out.println(english_input.charAt(i));
-                    eng[i] = english_input.charAt(i);
-                }
+                String in[] = english_input.split("");
                 // Check to ensure the english letters are appending
                 //System.out.println(eng.length);
-                // Begin English to Morse
+                for(int i=0;i < in.length;i++)
+                {
+                    english_to_morse(in[i]);
+                }
 
 
                 break;

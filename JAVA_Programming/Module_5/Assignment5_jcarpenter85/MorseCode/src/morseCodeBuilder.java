@@ -136,12 +136,12 @@ public class morseCodeBuilder {
         /*
         The user will pass in english here
          */
+        // Initialize the alphabet in morse code first then the array for integers 0 - 9
         String alpha_morse[] = {".- ", "-... ", "-.-. ", "-.. ", ". ", "..-. ", "--. ", ".... ", ".. ",
                 ".--- ", "-.- ", ".-.. ", "-- ", "-. ", "--- ", ".---. ", "--.- ", ".-. ",
                 "... ", "- ", "..- ", "...- ", ".-- ", "-..- ", "-.-- ", "--.. ", ".---- ",
                 "..--- ", "...-- ", "....- ", "..... ", "-.... ", "--... ", "---.. ", "----. ",
                 "----- ", "--..-- ", ".-.-.- ", "..--.. ", " | "};
-        ;
         String nums_morse[] = {".--- ", "..--- ", "...-- ", "....- ", "..... ", "-.... ", "--... ", "---.. ", "----. ", "----- "};
         // Begin checking for english characters here
         if (val.contentEquals("A")) {
@@ -262,18 +262,15 @@ public class morseCodeBuilder {
         System.out.println("Select 1 for Morse to English or 2 for English to Morse:");
         Scanner user_selection = new Scanner(System.in);
         int user_input = user_selection.nextInt();
-        System.out.println(user_input);
         switch (user_input) {
             case 1: {
                 System.out.println("You selected Morse to English!");
                 System.out.println();
-                System.out.println("Type in your sentence in Morse below:");
+                System.out.println("Type in your sentence in Morse below(Ex. .... . .-.. .-.. --- | .-- --- .-. .-.. -..):");
                 Scanner user_morse = new Scanner(System.in);
                 String morse_input = user_morse.nextLine();
-                //System.out.println(morse_input);
                 String in[] = morse_input.split(" ");
                 for (int i = 0; i < in.length; i++) {
-                    //System.out.print("The length of the input is " + in.length);
                     morse_to_english(in[i]);
                 }
                 break;
@@ -281,19 +278,14 @@ public class morseCodeBuilder {
             case 2: {
                 System.out.println("You selected English to Morse!");
                 System.out.println();
-                System.out.println("Type in your sentence in english below:");
+                System.out.println("Type in your sentence in english below(Ex. HELLO WORLD):");
                 Scanner user_english = new Scanner(System.in);
                 String english_input = user_english.nextLine();
-                //char eng[] = new char[english_input.length()];
                 System.out.println(english_input);
                 String in[] = english_input.split("");
-                // Check to ensure the english letters are appending
-                //System.out.println(eng.length);
                 for (int i = 0; i < in.length; i++) {
                     english_to_morse(in[i]);
                 }
-
-
                 break;
             }
             default: {

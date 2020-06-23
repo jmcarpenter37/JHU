@@ -67,82 +67,49 @@ public class TheBigRace {
         while (tortoise_pos <= 50 && hare_pos <= 50) {
             int tortoise_move_num;
             int hare_move_num;
-            // Tortoise makes a move
-            // 1. Generate the tortoises number
             tortoise_move_num = tortoiseRandomNumberGenerator();
-            //tortoise_move_num can only be +3 , +1, or -6
-            System.out.println("The Tortoise is moving: " + tortoise_move_num + " positions");
-            // First do the position update
             tortoise_pos = tortoise_pos + tortoise_move_num;
-            System.out.println("The Tortoise position is: " + tortoise_pos);
-            // This first if statement covers the case where the Tortoise cannot slip less than position = 1
-            if (tortoise_pos <= 0)
-            {
-                //System.out.println();
+            if (tortoise_pos <= 0) {
                 System.out.print("T");
                 tortoise_pos = 1;
-            }
-            else
-                {
-                for (tortoise_loop_pos=1;tortoise_loop_pos<=tortoise_pos;tortoise_loop_pos++)
-                {
+                System.out.println();
+            } else {
+                for (tortoise_loop_pos = 1; tortoise_loop_pos <= tortoise_pos; tortoise_loop_pos++) {
                     System.out.print("T");
-                    //System.out.println();
                 }
                 System.out.println();
             }
-            // Hare makes a move
-            // 1. Generate the hares move number
             hare_move_num = hareRandomNumberGenerator();
-            System.out.println("The hare is moving: " + hare_move_num + " spaces");
-            // The function above returns a move position of +9 , +1, -12, -2, 0(The hare falls asleep at 0)
             hare_pos = hare_pos + hare_move_num;
-            System.out.println("The Hare's position is: " + hare_pos);
-            if(hare_pos <= 0)
-            {
+            if (hare_pos <= 0) {
                 System.out.print("H");
                 hare_pos = 1;
-            }
-            else {
-                for(hare_loop_pos=1;hare_loop_pos<=hare_pos;hare_loop_pos++)
-                {
+                System.out.println();
+            } else {
+                for (hare_loop_pos = 1; hare_loop_pos <= hare_pos; hare_loop_pos++) {
                     System.out.print("H");
                 }
                 System.out.println();
             }
-            
+
             // According to instructions to determine a winner the following logic is applied:
             // The contender that first reaches or passes the last position of the course is the winner of the race.
             // We need to check the following:
             // Immediately check if either Tortoise or Hare are at pos >= 50 and determine a winner
-            if (tortoise_pos >= 50)
-            {
+            if (tortoise_pos >= 50) {
                 System.out.println("The Tortoise wins!");
-                System.out.println("The Tortoise made it to position: "+ tortoise_pos);
-                System.out.println("The Hare made it to position: " + hare_pos);
                 System.exit(0);
             }
-            if (hare_pos >= 50)
-            {
+            if (hare_pos >= 50) {
                 System.out.println("The Hare wins!");
-                System.out.println("The Tortoise made it to position: "+ tortoise_pos);
-                System.out.println("The Hare made it to position: " + hare_pos);
             }
-            if ((hare_pos == tortoise_pos) && (hare_pos < 50 && tortoise_pos < 50))
-            {
-                System.out.println("OUCH! They landed on the same spot.");
-                System.out.println("The Tortoise is in position: "+tortoise_pos);
-                System.out.println("The Hare is in position: "+hare_pos);
+            if ((hare_pos == tortoise_pos) && (hare_pos < 50 && tortoise_pos < 50)) {
+                System.out.println("OUCH!");
                 System.out.println();
 
-            }
-            else if((hare_pos >= 50 && tortoise_pos >= 50) && (hare_pos == tortoise_pos))
-            {
+            } else if ((hare_pos >= 50 && tortoise_pos >= 50) && (hare_pos == tortoise_pos)) {
                 System.out.println("It's a tie!");
-                System.out.println("The Tortoise ended in position: " + tortoise_pos);
-                System.out.println("The Hare ended in position: " + hare_pos);
             }
-
 
 
         }

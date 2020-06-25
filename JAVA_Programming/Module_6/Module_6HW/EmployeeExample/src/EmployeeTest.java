@@ -1,29 +1,9 @@
-import java.net.SecureCacheResponse;
 import java.util.Scanner;
 
 public class EmployeeTest {
     public static void main(String[] args) {
 
-//        System.out.println("How many employees would you like to type numbers for?");
-//        Scanner emp_id_in = new Scanner(System.in);
-//        int emp_in = emp_id_in.nextInt();
-//        Employee obj[] = new Employee[emp_in]; // should be size of the scanned input
-//        //System.out.println(obj.length);
-//        //Object my_object_array []; // initialize an empty object array to store employee objects in
-//        for(int i = 0; i < obj.length;i++)
-//        {
-//            // Create scanners to type in employees information
-//            // Data integrity is checked in the separate classes
-//            System.out.println("Enter an employee number");
-//            Scanner number_in = new Scanner(System.in);
-//            int in = number_in.nextInt();
-//            //Employee employee_object = new Employee();
-//            obj[i] = new Employee();
-//            obj[i].get_employee_information(in);
-//
-//        }
-//        obj[0].show_dat();
-//        obj[1].show_dat();
+
         // Ask user how many entries they'd like to input
         System.out.println("How many employees would you like to type numbers for?");
         Scanner emp_id_in = new Scanner(System.in);

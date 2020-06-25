@@ -36,6 +36,7 @@ public class Employee {
 
     void show_dat()
     {
+        System.out.println("Employee Data:");
         System.out.println("Employee ID: " + emp_number);
         System.out.println("First Name: " + emp_first_name);
         System.out.println("Last Name: " + emp_last_name);

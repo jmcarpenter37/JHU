@@ -17,9 +17,8 @@ public class Employee {
     public int employee_hire_month;
     public int employee_hire_day;
     public int employee_hire_year;
-
     // get values
-    void get_employee_information(int emp_num, String emp_first, String emp_last, String emp_street,
+    void get_employee_information(int emp_num, String emp_first, String emp_last, String emp_street,int emp_zip,
                                   String emp_city, String emp_state, int emp_hire_month, int emp_hire_day,
                                   int emp_hire_year) {
         emp_number = emp_num;
@@ -31,16 +30,17 @@ public class Employee {
         employee_hire_month = emp_hire_month;
         employee_hire_day = emp_hire_day;
         employee_hire_year = emp_hire_year;
+        employee_zip = emp_zip;
 
     }
 
-    void show_dat()
-    {
+    void show_dat() {
         System.out.println("Employee Data:");
         System.out.println("Employee ID: " + emp_number);
         System.out.println("First Name: " + emp_first_name);
         System.out.println("Last Name: " + emp_last_name);
         System.out.println("Street: " + employee_street);
+        System.out.println("Zip: " + employee_zip);
         System.out.println("Employee City: " + employee_city);
         System.out.println("Employee State: " + employee_state);
         System.out.println("Month hired: " + employee_hire_month);

@@ -19,7 +19,7 @@ public class Address {
             city = emp_city;
 
         }
-        if (emp_state.split("").length > 1) {
+        if (emp_state.split("").length > 2) {
             System.out.println("You didn't enter the employee's state correctly");
         } else {
             state = emp_state;

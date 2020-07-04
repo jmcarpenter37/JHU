@@ -2,6 +2,12 @@ public class Name
 {
     private String first_name;
     private String last_name;
+
+    // default constructor
+    Name()
+    {
+
+    }
     // build constructor
     public Name(String first , String last)
     {

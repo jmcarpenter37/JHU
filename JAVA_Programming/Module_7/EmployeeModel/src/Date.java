@@ -5,6 +5,11 @@ public class Date
     private int month;
     private int day;
     private int year;
+    // Default constructor
+    Date()
+    {
+
+    }
     Date(int emp_month , int emp_day , int emp_year)
     {
         month = emp_month;

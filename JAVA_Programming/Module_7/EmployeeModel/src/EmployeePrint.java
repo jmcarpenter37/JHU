@@ -11,5 +11,10 @@ public class EmployeePrint
             // Create Employee
             Employee employee_obj = new Employee("22205",  name_obj , addr_obj , date_obj);
             System.out.println(employee_obj.toString());
+            // TEST ZONEEEEE
+            System.out.println("TESTING SOME STUFF BELOW");
+            // Create Salary Employee class
+            SalaryEmployee sal_emp = new SalaryEmployee("45" , "9" , name_obj , addr_obj , date_obj);
+            System.out.println(sal_emp.toString());
         }
 }

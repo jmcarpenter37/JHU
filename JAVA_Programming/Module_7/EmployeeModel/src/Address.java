@@ -5,6 +5,11 @@ public class Address
     private String city;
     private String state;
     private int zip_code;
+    // default constructor
+    Address()
+    {
+
+    }
     // initialize constructor
     Address(String emp_street , String emp_city , String emp_state , int emp_zip )
     {

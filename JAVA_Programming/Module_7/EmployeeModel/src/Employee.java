@@ -4,6 +4,11 @@ public class Employee {
     Name name;
     Address addr;
     Date date;
+    // Default constructor
+    Employee()
+    {
+
+    }
 
     // employee constructor
     // constructor will take objects:

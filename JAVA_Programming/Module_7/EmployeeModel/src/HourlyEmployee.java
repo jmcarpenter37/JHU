@@ -14,7 +14,7 @@ public class HourlyEmployee extends Employee
 
     }
     //
-    HourlyEmployee(float emp_hourly_pay_rate, int emp_hours_worked, String emp_num, Name name, Address addr , Date date)
+    HourlyEmployee(double emp_hourly_pay_rate, int emp_hours_worked, String emp_num, Name name, Address addr , Date date)
     {
         this.emp_hours_worked = emp_hours_worked;
         if(emp_hours_worked <= 40)

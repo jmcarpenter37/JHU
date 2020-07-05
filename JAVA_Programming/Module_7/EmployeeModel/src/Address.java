@@ -4,14 +4,14 @@ public class Address
     private String street;
     private String city;
     private String state;
-    private int zip_code;
+    private String zip_code;
     // default constructor
     Address()
     {
 
     }
     // initialize constructor
-    Address(String emp_street , String emp_city , String emp_state , int emp_zip )
+    Address(String emp_street , String emp_city , String emp_state , String emp_zip )
     {
         street = emp_street;
         city = emp_city;
@@ -31,7 +31,7 @@ public class Address
     {
         this.state = state;
     }
-    public void setZip_code(int zip_code)
+    public void setZip_code(String zip_code)
     {
         this.zip_code = zip_code;
     }

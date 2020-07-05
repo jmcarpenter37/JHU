@@ -18,7 +18,9 @@ class Outer {
 }
 
 class InnerEx {
-    static public void main(String args[]) {
+    static public void main(String args[])
+    {
+        String myString = "Hello";
         Outer outer_obj = new Outer();
         outer_obj.test();
 

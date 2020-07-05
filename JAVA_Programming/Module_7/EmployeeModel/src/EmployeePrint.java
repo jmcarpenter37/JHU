@@ -26,18 +26,13 @@ public class EmployeePrint {
                 }
 
             } while (go != true);
-            // Convert string to int
             int p_rate = Integer.parseInt(pay_rate);
-            System.out.println("PAY RATE: " + p_rate);
-
-            // Query hours worked
             System.out.println("Enter the number of hours the employee worked: ");
             Scanner scanner_hours_worked = new Scanner(System.in);
             String h_worked = scanner_hours_worked.nextLine();
             do {
                 try {
                     int check_val = Integer.parseInt(h_worked);
-                    // check to see if we can parse the input to an int
                     go = true;
 
                 } catch (NumberFormatException err) {
@@ -48,10 +43,7 @@ public class EmployeePrint {
                 }
 
             } while (go != true);
-            // Convert string to int
             int hours = Integer.parseInt(h_worked);
-            System.out.println("HOURS WORKED: " + hours);
-            // Query employee number
             System.out.println("Please enter the six digit employee ID number: ");
             Scanner scanner_emp_id = new Scanner(System.in);
             String emp_id = scanner_emp_id.nextLine();
@@ -67,8 +59,6 @@ public class EmployeePrint {
 
             } while (go != true);
             System.out.println("EMP ID NUMBER: " + emp_id);
-            // Now take care of the objects
-            // start name class object
             Name name_obj;
             System.out.println("Please enter the users first and last name: ");
             Scanner emp_name = new Scanner(System.in);
@@ -83,7 +73,6 @@ public class EmployeePrint {
             System.out.println("Please enter the city of your employee.(Ex Baltimore)");
             Scanner scanner_emp_city = new Scanner(System.in);
             String emp_city = scanner_emp_city.next();
-            //
             System.out.println("Please enter the state abbreviation where your employee lives.(Ex. Maryland is MD)");
             Scanner scanner_emp_state = new Scanner(System.in);
             String emp_state = scanner_emp_state.next();
@@ -93,7 +82,6 @@ public class EmployeePrint {
                     System.out.println("That was not a valid state abbrevation. Please try again.");
                     System.out.println("Please enter the state abbreviation where your employee lives.(Ex. Maryland is MD)");
                     emp_state = scanner_emp_state.next();
-                    //go = false;
                 } else {
                     go = true;
                 }
@@ -123,10 +111,8 @@ public class EmployeePrint {
                     System.out.println("Enter the month the employee was hired: ");
                     go = false;
                 }
-
             }
             while (go != true);
-            // day
             System.out.println("Enter the day the employee was hired: ");
             Scanner scanner_emp_dhired = new Scanner(System.in);
             int emp_dhired = scanner_emp_dhired.nextInt();
@@ -141,10 +127,9 @@ public class EmployeePrint {
 
             }
             while (go != true);
-            // year
             System.out.println("Enter the year the employee was hired: ");
             Scanner scanner_emp_yhired = new Scanner(System.in);
-            int emp_yhired = scanner_emp_dhired.nextInt();
+            int emp_yhired = scanner_emp_yhired.nextInt();
             do {
                 if (emp_yhired < 1900 || emp_yhired > 2020) {
                     System.out.println("That was not a valid year. Please try again.");
@@ -164,40 +149,28 @@ public class EmployeePrint {
             hour_emp_arr[i] = hourly_obj;
 
         }
-        // Begin data query
         System.out.println("How many salaried employees would you like to add?");
         Scanner salary_emp_scanner = new Scanner(System.in);
         int num_sal_emps = salary_emp_scanner.nextInt();
         SalaryEmployee sal_emp_arr[] = new SalaryEmployee[num_sal_emps];
-
-
-        // Begin gathering hourly employee data
         for (int i = 0; i < sal_emp_arr.length; i++) {
             boolean go = true;
-            //String emp_sal , String emp_num, Name name, Address addr , Date date
-            // emp_sal
             System.out.println("Please enter the employees salary: ");
             Scanner scanner_salary = new Scanner(System.in);
             String emp_sal = scanner_salary.nextLine();
             do {
                 try {
                     int check_val = Integer.parseInt(emp_sal);
-                    // check to see if we can parse the input to an int
                     go = true;
-
                 } catch (NumberFormatException err) {
                     go = false;
                     System.out.println("That is not a valid salary. Please try again.");
                     System.out.println("Please enter the employees salary: ");
                     emp_sal = scanner_salary.nextLine();
                 }
-
             } while (go != true);
-            // Convert string to int
             int sal_rate = Integer.parseInt(emp_sal);
             System.out.println("EMPLOYEE SALARY: " + sal_rate);
-
-            // emp_num
             System.out.println("Please enter the six digit employee ID number: ");
             Scanner scanner_emp_id = new Scanner(System.in);
             String emp_id = scanner_emp_id.nextLine();
@@ -212,10 +185,6 @@ public class EmployeePrint {
                 }
 
             } while (go != true);
-            System.out.println("EMP ID NUMBER: " + emp_id);
-
-            // call classes
-            // start name class object
             Name name_obj;
             System.out.println("Please enter the users first and last name: ");
             Scanner emp_name = new Scanner(System.in);
@@ -224,14 +193,12 @@ public class EmployeePrint {
             System.out.println("Last Name: ");
             String last_name = emp_name.nextLine();
             name_obj = new Name(first_name, last_name);
-
             System.out.println("Please enter the street address of your employee.(Ex. New Haven St)");
             Scanner scanner_emp_street = new Scanner(System.in);
             String emp_street = scanner_emp_street.next();
             System.out.println("Please enter the city of your employee.(Ex Baltimore)");
             Scanner scanner_emp_city = new Scanner(System.in);
             String emp_city = scanner_emp_city.next();
-            //
             System.out.println("Please enter the state abbreviation where your employee lives.(Ex. Maryland is MD)");
             Scanner scanner_emp_state = new Scanner(System.in);
             String emp_state = scanner_emp_state.next();
@@ -241,7 +208,6 @@ public class EmployeePrint {
                     System.out.println("That was not a valid state abbrevation. Please try again.");
                     System.out.println("Please enter the state abbreviation where your employee lives.(Ex. Maryland is MD)");
                     emp_state = scanner_emp_state.next();
-                    //go = false;
                 } else {
                     go = true;
                 }
@@ -262,12 +228,6 @@ public class EmployeePrint {
             }
             while (go != true);
             Address addr_obj = new Address(emp_street, emp_city, emp_state, emp_zip);
-            // create date class obj
-            /*
-            private int month; goes from 1 to 12
-            private int day; 1 to 31
-            private int year; goes from 1900 to 2020
-             */
             System.out.println("Enter the month the employee was hired: ");
             Scanner scanner_emp_hired = new Scanner(System.in);
             int emp_hired_month = scanner_emp_hired.nextInt();
@@ -277,10 +237,8 @@ public class EmployeePrint {
                     System.out.println("Enter the month the employee was hired: ");
                     go = false;
                 }
-
             }
             while (go != true);
-            // day
             System.out.println("Enter the day the employee was hired: ");
             Scanner scanner_emp_dhired = new Scanner(System.in);
             int emp_dhired = scanner_emp_dhired.nextInt();
@@ -292,13 +250,11 @@ public class EmployeePrint {
                 } else {
                     go = true;
                 }
-
             }
             while (go != true);
-            // year
             System.out.println("Enter the year the employee was hired: ");
             Scanner scanner_emp_yhired = new Scanner(System.in);
-            int emp_yhired = scanner_emp_dhired.nextInt();
+            int emp_yhired = scanner_emp_yhired.nextInt();
             do {
                 if (emp_yhired < 1900 || emp_yhired > 2020) {
                     System.out.println("That was not a valid year. Please try again.");
@@ -308,29 +264,19 @@ public class EmployeePrint {
                 } else {
                     go = true;
                 }
-
             }
             while (go != true);
             Date date_obj = new Date(emp_hired_month, emp_dhired, emp_yhired);
-            // write to hourly employee object array
-            //hour_emp_arr[i] = new HourlyEmployee();
-            //HourlyEmployee hourly_obj = new HourlyEmployee(p_rate, hours, emp_id, name_obj, addr_obj, date_obj);
-            //hour_emp_arr[i] = hourly_obj;
             sal_emp_arr[i] = new SalaryEmployee();
-            SalaryEmployee sal_emp_obj = new SalaryEmployee(emp_sal , emp_id, name_obj, addr_obj, date_obj);
+            SalaryEmployee sal_emp_obj = new SalaryEmployee(emp_sal, emp_id, name_obj, addr_obj, date_obj);
             sal_emp_arr[i] = sal_emp_obj;
-
         }
-        // print out all the date
-        for(int j = 0;j < sal_emp_arr.length ;j++)
-        {
-            System.out.println(sal_emp_arr[j].toString());
+        for (int k = 0; k < hour_emp_arr.length; k++) {
+            System.out.println(hour_emp_arr[k].toString());
             System.out.println();
         }
-
-        for(int k = 0; k < hour_emp_arr.length;k++)
-        {
-            System.out.println( hour_emp_arr[k].toString() );
+        for (int j = 0; j < sal_emp_arr.length; j++) {
+            System.out.println(sal_emp_arr[j].toString());
             System.out.println();
         }
 

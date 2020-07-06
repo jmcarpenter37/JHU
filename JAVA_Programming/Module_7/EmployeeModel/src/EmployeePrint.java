@@ -58,7 +58,6 @@ public class EmployeePrint {
                 }
 
             } while (go != true);
-            System.out.println("EMP ID NUMBER: " + emp_id);
             Name name_obj;
             System.out.println("Please enter the users first and last name: ");
             Scanner emp_name = new Scanner(System.in);
@@ -92,9 +91,11 @@ public class EmployeePrint {
             String emp_zip = scanner_emp_zip.nextLine();
             do {
                 if (String.valueOf(emp_zip).length() != 5) {
+                    go = false;
                     System.out.println("That was not a valid zip code.");
                     System.out.println("Please enter your employees zip code: ");
-                    go = false;
+                    emp_zip = scanner_emp_zip.nextLine();
+
                 } else {
                     go = true;
                 }
@@ -106,14 +107,20 @@ public class EmployeePrint {
             Scanner scanner_emp_hired = new Scanner(System.in);
             int emp_hired_month = scanner_emp_hired.nextInt();
             do {
-                if (emp_hired_month < 1 || emp_hired_month > 12) {
+                if (emp_hired_month < 1 || emp_hired_month > 12)
+                {
                     System.out.println("That was not a valid month. Please try again.");
                     System.out.println("Enter the month the employee was hired: ");
                     go = false;
+                    emp_hired_month = scanner_emp_hired.nextInt();
+                }
+                else
+                {
+                    go = true;
                 }
             }
             while (go != true);
-            System.out.println("Enter the day the employee was hired: ");
+            System.out.println("Enter the day the employee was hired(Ex. If the employee was hired on the 25th type 25): ");
             Scanner scanner_emp_dhired = new Scanner(System.in);
             int emp_dhired = scanner_emp_dhired.nextInt();
             do {
@@ -121,13 +128,13 @@ public class EmployeePrint {
                     System.out.println("That was not a valid day. Please try again.");
                     System.out.println("Enter the day the employee was hired: ");
                     go = false;
+                    emp_dhired = scanner_emp_dhired.nextInt();
                 } else {
                     go = true;
                 }
-
             }
             while (go != true);
-            System.out.println("Enter the year the employee was hired: ");
+            System.out.println("Enter the year the employee was hired(Ex. If the employee was hired in 1990 then type 1990): ");
             Scanner scanner_emp_yhired = new Scanner(System.in);
             int emp_yhired = scanner_emp_yhired.nextInt();
             do {
@@ -159,7 +166,8 @@ public class EmployeePrint {
             Scanner scanner_salary = new Scanner(System.in);
             String emp_sal = scanner_salary.nextLine();
             do {
-                try {
+                try
+                {
                     int check_val = Integer.parseInt(emp_sal);
                     go = true;
                 } catch (NumberFormatException err) {
@@ -170,7 +178,6 @@ public class EmployeePrint {
                 }
             } while (go != true);
             int sal_rate = Integer.parseInt(emp_sal);
-            System.out.println("EMPLOYEE SALARY: " + sal_rate);
             System.out.println("Please enter the six digit employee ID number: ");
             Scanner scanner_emp_id = new Scanner(System.in);
             String emp_id = scanner_emp_id.nextLine();
@@ -218,13 +225,13 @@ public class EmployeePrint {
             String emp_zip = scanner_emp_zip.nextLine();
             do {
                 if (String.valueOf(emp_zip).length() != 5) {
+                    go = false;
                     System.out.println("That was not a valid zip code.");
                     System.out.println("Please enter your employees zip code: ");
-                    go = false;
+                    emp_zip = scanner_emp_zip.nextLine();
                 } else {
                     go = true;
                 }
-
             }
             while (go != true);
             Address addr_obj = new Address(emp_street, emp_city, emp_state, emp_zip);
@@ -233,9 +240,10 @@ public class EmployeePrint {
             int emp_hired_month = scanner_emp_hired.nextInt();
             do {
                 if (emp_hired_month < 1 || emp_hired_month > 12) {
+                    go = false;
                     System.out.println("That was not a valid month. Please try again.");
                     System.out.println("Enter the month the employee was hired: ");
-                    go = false;
+                    emp_hired_month = scanner_emp_hired.nextInt();
                 }
             }
             while (go != true);
@@ -244,9 +252,10 @@ public class EmployeePrint {
             int emp_dhired = scanner_emp_dhired.nextInt();
             do {
                 if (emp_dhired < 1 || emp_dhired > 31) {
+                    go = false;
                     System.out.println("That was not a valid day. Please try again.");
                     System.out.println("Enter the day the employee was hired: ");
-                    go = false;
+                    emp_dhired = scanner_emp_dhired.nextInt();
                 } else {
                     go = true;
                 }
@@ -257,10 +266,10 @@ public class EmployeePrint {
             int emp_yhired = scanner_emp_yhired.nextInt();
             do {
                 if (emp_yhired < 1900 || emp_yhired > 2020) {
+                    go = false;
                     System.out.println("That was not a valid year. Please try again.");
                     System.out.println("Enter the year the employee was hired: ");
                     emp_yhired = scanner_emp_dhired.nextInt();
-                    go = false;
                 } else {
                     go = true;
                 }

@@ -25,25 +25,37 @@ public class Address {
     }
 
     //setters
-    /** Set the street.
+
+    /**
+     * Set the street.
+     *
      * @param street
      */
     public void setStreet(String street) {
         this.street = street;
     }
-    /** Set the street.
+
+    /**
+     * Set the street.
+     *
      * @param city
      */
     public void setCity(String city) {
         this.city = city;
     }
-    /** Set the street.
+
+    /**
+     * Set the street.
+     *
      * @param state
      */
     public void setState(String state) {
         this.state = state;
     }
-    /** Set the street.
+
+    /**
+     * Set the street.
+     *
      * @param zip_code
      */
     public void setZip_code(String zip_code) {
@@ -51,30 +63,43 @@ public class Address {
     }
 
     //getters
-    /** Get the address.
+
+    /**
+     * Get the address.
+     *
      * @return
      */
     public String getStreet() {
         return street;
     }
-    /** Get the city.
+
+    /**
+     * Get the city.
+     *
      * @return
      */
     public String getCity() {
         return city;
     }
-    /** Get the state.
+
+    /**
+     * Get the state.
+     *
      * @return
      */
     public String getState() {
         return state;
     }
-    /** Get the zip code.
+
+    /**
+     * Get the zip code.
+     *
      * @return
      */
     public String getZip_code() {
         return zip_code;
     }
+
     //override toString() method
     public String toString() {
         return "Street: " + street + "\n" + "City: " + city + "\n" + "State: " + state + "\n" + "Zip Code: " + zip_code;

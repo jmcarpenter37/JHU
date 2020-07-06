@@ -30,6 +30,7 @@ public class Date {
 
     /**
      * Set the day
+     *
      * @param day
      */
     public void setDay(int day) {
@@ -38,6 +39,7 @@ public class Date {
 
     /**
      * Set the year
+     *
      * @param year
      */
     public void setYear(int year) {
@@ -47,30 +49,31 @@ public class Date {
 
     /**
      * Returns the month
+     *
      * @return
      */
-    public int getMonth()
-    {
+    public int getMonth() {
         return month;
     }
 
     /**
      * Returns the day
+     *
      * @return
      */
-    public int getDay()
-    {
+    public int getDay() {
         return day;
     }
 
     /**
      * Returns the year
+     *
      * @return
      */
-    public int getYear()
-    {
+    public int getYear() {
         return year;
     }
+
     // override toString()
     public String toString() {
         return "Month Hired: " + month + "\n" + "Day Hired: " + day + "\n" + "Year Hired: " + year;

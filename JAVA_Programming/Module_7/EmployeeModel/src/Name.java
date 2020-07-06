@@ -1,4 +1,9 @@
 public class Name {
+    /**
+     * @author John Carpenter
+     * @param first , last
+     * This class takes in the employees first name and last name respectively
+     */
     private String first_name;
     private String last_name;
 

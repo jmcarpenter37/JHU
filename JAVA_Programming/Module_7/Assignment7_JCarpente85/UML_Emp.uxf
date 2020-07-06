@@ -1,0 +1,97 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>580</x><y>70</y><w>220</w><h>150</h></coordinates><panel_attributes>Name
+--
+- String:first_name
+- String:last_name
+--
++ setFirst_Name( first_name: String)
++ setLast_Name( last_name: String)
++ getFirstName(): first_name
++ getLast_Name(): last_name
++ toString(): first_name, last_name
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>20</y><w>210</w><h>180</h></coordinates><panel_attributes>Date
+--
+- int: month
+- int: day
+- int: year
+--
++ setMonth(month: int)
++ setDay(day: int)
++ setYear(year: int)
++ getMonth(): month
++ getDay(): day
++ getYear(): year
++ toString(): month, day, year
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>0</y><w>220</w><h>230</h></coordinates><panel_attributes>Address
+--
+- String: street
+- String: city
+- String: state
+- String: zip_code
+--
++ setStreet(street: String)
++ setCity(city: String)
++ setState(state: String)
++ setZip-code(zip_code:String)
++ getStreet(): street
++ getCity(): city
++ getState(): state
++ getZip_code(): zip_code
++ toString(): street, city, state, zip_code
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>710</x><y>370</y><w>400</w><h>240</h></coordinates><panel_attributes>Employee
+--
+- String: emp_num
+- Name: name
+- Address: addr
+- Date: date
+--
++ setEmp_Num(emp_num: String)
++ setName(name: Name)
++ setAddr(addr: Address)
++ setDate(date: Date)
++ getEmp_num(): emp_num
++ getName(): name.toString()
++ getAddr(): addr.toString()
++ getDate(): date.toString()
++ toString(): emp_num, name.toString(), addr.toString(), date.toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>210</y><w>110</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;160</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>190</y><w>50</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;30;180</additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>220</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>290</y><w>520</w><h>340</h></coordinates><panel_attributes>HourlyEmplyee
+--
+- double: emp_earnings
+- double: emp_hourly_pay_rate
+- int: emp_hours_worked
+- String: emp_num
+- Name: name
+- Address: addr
+- Date: date 
+--
++ setEmp_hourly_pay_rate(emp_hourly_pay_rate: double)
++ setEmp_hours_worked(emp_hours_worked: int)
++ setEmpNum(emp_num: String)
++ setName(name: Name)
++ setAddress(addr: Address)
++ setDate(date: Date)
++ getEmpHourlyRate(): emp_hourly_rate
++ getEmpHoursWorked(): emp_hours_worked
++ getEmployeeNum(): emp_num
++ getName(): name.toString()
++ getAddr(): addr.toString()
++ getDate(): date.toString()
++ toString(): emp_hourly_rate, emp_hours_worked, emp_earnings, emp_num, name.toString(), addr.toString(), date.toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1150</x><y>350</y><w>490</w><h>260</h></coordinates><panel_attributes>SalaryEmployee
+--
+- String: annual_salary
+- String: emp_num
+- Name: name
+- Address: addr
+- Date: date
+--
++ setEmployeeNum(emp_num: String)
++ setName(name: Name)
++ setAddr(addr: Address)
++ setDate(date: Date)
++ getEmpSal(): annual_salary
++ getEmpNum(): emp_num
++ getName(): name.toString()
++ getAddr(): addr.toString()
++ getDate(): date.toString()
++ toString(): annual_salary, emp_name, name.toString(), addr.toString(), date.toString()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>410</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>410</y><w>70</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;50;10</additional_attributes></element></diagram>

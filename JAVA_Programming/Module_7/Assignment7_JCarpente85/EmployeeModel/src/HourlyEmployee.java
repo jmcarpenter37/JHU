@@ -8,10 +8,10 @@ public class HourlyEmployee extends Employee {
     private double emp_earnings;
     private double emp_hourly_pay_rate;
     private int emp_hours_worked;
-    String emp_num;
-    Name name;
-    Address addr;
-    Date date;
+    private String emp_num;
+    private Name name;
+    private Address addr;
+    private Date date;
 
     // base constructor
     HourlyEmployee() {

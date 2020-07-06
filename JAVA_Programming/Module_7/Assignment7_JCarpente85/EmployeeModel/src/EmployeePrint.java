@@ -107,15 +107,12 @@ public class EmployeePrint {
             Scanner scanner_emp_hired = new Scanner(System.in);
             int emp_hired_month = scanner_emp_hired.nextInt();
             do {
-                if (emp_hired_month < 1 || emp_hired_month > 12)
-                {
+                if (emp_hired_month < 1 || emp_hired_month > 12) {
                     System.out.println("That was not a valid month. Please try again.");
                     System.out.println("Enter the month the employee was hired: ");
                     go = false;
                     emp_hired_month = scanner_emp_hired.nextInt();
-                }
-                else
-                {
+                } else {
                     go = true;
                 }
             }
@@ -166,8 +163,7 @@ public class EmployeePrint {
             Scanner scanner_salary = new Scanner(System.in);
             String emp_sal = scanner_salary.nextLine();
             do {
-                try
-                {
+                try {
                     int check_val = Integer.parseInt(emp_sal);
                     go = true;
                 } catch (NumberFormatException err) {

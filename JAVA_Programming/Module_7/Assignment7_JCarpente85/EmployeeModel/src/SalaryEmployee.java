@@ -6,10 +6,10 @@ public class SalaryEmployee extends Employee {
      * and the date object
      */
     private String annual_salary;
-    String emp_num;
-    Name name;
-    Address addr;
-    Date date;
+    private String emp_num;
+    private Name name;
+    private Address addr;
+    private Date date;
 
     // Default constructor
     SalaryEmployee() {

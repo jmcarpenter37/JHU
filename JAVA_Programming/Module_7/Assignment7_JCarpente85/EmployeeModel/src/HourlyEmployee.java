@@ -5,6 +5,7 @@ public class HourlyEmployee extends Employee {
      * This class takes in the employee hourly rate, hours worked, employee ID number, name object, address obeject,
      * and date object respectively.
      */
+    private Employee emp;
     private double emp_earnings;
     private double emp_hourly_pay_rate;
     private int emp_hours_worked;

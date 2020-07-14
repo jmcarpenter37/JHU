@@ -2,24 +2,24 @@
  * @author John Carpenter
  * This abstract class manipulates animal types
  */
-public abstract class ManipulateAnimals {
+interface ManipulateAnimals {
     /**
-     * This abstract method draws the animal object
+     * This method draws the animal object
      */
-    public abstract void drawObject();
+    void drawObject();
 
     /**
-     * This abstract method rotates the animal object
+     * This method rotates the animal object
      */
-    public abstract void rotateObject();
+    void rotateObject();
 
     /**
-     * This abstract method resized the animal object
+     * This method resized the animal object
      */
-    public abstract void resizeObject();
+    void resizeObject();
 
     /**
-     * This abstarct plays the animal sound
+     * This plays the animal sound
      */
-    public abstract void playSound();
+    void playSound();
 }

@@ -1,27 +1,26 @@
 /**
  * @author John Carpenter
- * This class manipualates the vehicle object created in the LearningInterface class
+ * This interface the vehicle object created in the LearningInterface class
  */
-public abstract class ManipulateVehicle
-{
+interface ManipulateVehicle {
     /**
-     * This abstract method draws the vehicle object
+     * This method draws the vehicle object
      */
-    public abstract void drawObject();
+    void drawObject();
 
     /**
-     * This abstract method rotates the vehicle object
+     * This method rotates the vehicle object
      */
-    public abstract void rotateObject();
+    void rotateObject();
 
     /**
-     * This abstract method resized the vehicle object
+     * This method resized the vehicle object
      */
-    public abstract void resizeObject();
+    void resizeObject();
 
     /**
-     * This abstarct plays the cehicle sound
+     * This method plays the vehicle sound
      */
-    public abstract void playSound();
+    void playSound();
 
 }

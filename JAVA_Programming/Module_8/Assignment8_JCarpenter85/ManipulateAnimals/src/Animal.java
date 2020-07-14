@@ -2,7 +2,7 @@
  * @author John Carpenter
  * This class takes in animal name as a parameter.
  */
-public class Animal extends ManipulateAnimals {
+public class Animal implements ManipulateAnimals {
     public String animal_name;
 
     // Initialize constructor
@@ -19,7 +19,8 @@ public class Animal extends ManipulateAnimals {
         this.animal_name = animal_name;
     }
 
-    /**`
+    /**
+     * `
      * This method returns the animals name
      *
      * @return

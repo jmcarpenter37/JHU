@@ -2,7 +2,7 @@
  * @author John Carpenter
  * This class takes in the parameters for the vehicle name and age
  */
-public class Vehicle extends ManipulateVehicle {
+public class Vehicle implements ManipulateVehicle {
     public String vehicle_name;
     public int age;
 
@@ -47,31 +47,28 @@ public class Vehicle extends ManipulateVehicle {
     /**
      * This abstract method draws the vehicle object
      */
-    public void drawObject(){
+    public void drawObject() {
         System.out.println("Drawing a vehicle");
     }
 
     /**
      * This abstract method rotates the vehicle object
      */
-    public void rotateObject()
-    {
+    public void rotateObject() {
         System.out.println("Rotating vehicle");
     }
 
     /**
      * This abstract method resized the vehicle object
      */
-    public void resizeObject()
-    {
+    public void resizeObject() {
         System.out.println("Resizing vehicle");
     }
 
     /**
      * This abstarct plays the cehicle sound
      */
-    public void playSound()
-    {
+    public void playSound() {
         System.out.println("Vehicle sound");
     }
 

@@ -1,28 +1,15 @@
 import java.util.Scanner;
 
 /**
- *
+ * @author John Carpenter
+ * The LearningInterface class contains the main() method.
+ * Here is where we query the user for animal and vehicle information
  */
-public class LearningInterface
-{
-    public static void main(String args [])
-    {
-        System.out.println("How many animals would you like to create?");
-        Scanner animal_scanner = new Scanner(System.in);
-        int num_animal = animal_scanner.nextInt();
-        Animal [] ani = new Animal[num_animal]; // Initialze array ani of data type Animal size based off input
-        for (int j = 0;j < ani.length;j++)
-        {
-            //Animal an_obj = new Animal();
-            System.out.println("What is the name of the animal?");
-            Scanner name_scanner = new Scanner(System.in);
-            String name = name_scanner.next();
-            Animal an_obj = new Animal(name);
-            ani[j] = an_obj;
-
-        }
-        for(int i = 0 ; i < ani.length ; i++)
-        {
+public class LearningInterface {
+    public static void main(String args[]) {
+        Animal[] ani = {new Animal("Cow"), new Animal("Chicken")};
+        Vehicle[] vehicle = {new Vehicle("Ford Mustang", 20), new Vehicle("Chevy Corvette", 5)};
+        for (int i = 0; i < ani.length; i++) {
             System.out.println(ani[i].getAnimal_name());
             ani[i].playSound();
             ani[i].drawObject();
@@ -30,7 +17,14 @@ public class LearningInterface
             ani[i].resizeObject();
             System.out.println();
         }
-        // Vehicle start
-        System.out.println("How many vehicles would you like to create?");
+
+        for (int i = 0; i < ani.length; i++) {
+            System.out.println(vehicle[i].getVehicle_name());
+            vehicle[i].playSound();
+            vehicle[i].drawObject();
+            vehicle[i].rotateObject();
+            vehicle[i].resizeObject();
+            System.out.println();
+        }
     }
 }

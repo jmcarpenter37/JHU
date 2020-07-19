@@ -1,6 +1,6 @@
 /**
  * @author John Carpenter
- * This abstract class manipulates animal types
+ * This interface manipulates animal types
  */
 interface ManipulateAnimals {
     /**

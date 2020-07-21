@@ -74,7 +74,11 @@ public class DeckOfCards
         }
 
     }
-    // Remove a card
+
+    /**
+     * Remove the card from the index temp deck
+     * @param remove_index
+     */
     public void remove_fromDeck(int remove_index)
     {
         this.cards.remove(remove_index);
@@ -118,22 +122,19 @@ public class DeckOfCards
         int count = 0;
         for(Cards card : this.cards)
         {
-            card_out += "\n"  + card.toString();
+            card_out += card.toString() + "\n";
         }
         return card_out;
 
     }
-    // Loop through current cards
-    public String loopThrough()
-    {
-        String card = "";
-        for(Cards cards : this.cards)
-        {
-            card += "\n" + cards.getCardValue();
-        }
-        return card;
-    }
+
+
     // Get scoring value of the cards
+
+    /**
+     * Get the score of the dealer or player current score
+     * @return Returns the score of the hand
+     */
     public int getHandScore()
     {
         int curr_score = 0;

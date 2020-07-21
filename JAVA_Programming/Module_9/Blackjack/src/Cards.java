@@ -1,4 +1,3 @@
-import java.util.Random;
 /**
  * @author John Carpenter
  * @param suit, val

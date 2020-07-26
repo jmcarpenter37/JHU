@@ -1,7 +1,9 @@
-import java.awt.desktop.SystemSleepEvent;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * @author John Carpenter
+ */
 public class FileOut
 {
     /*
@@ -31,6 +33,7 @@ public class FileOut
 
         }catch (IOException err)
         {
+            System.out.println("An IOException has occured: ");
             System.out.println(err);
         }
     }

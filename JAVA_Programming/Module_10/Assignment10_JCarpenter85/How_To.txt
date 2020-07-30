@@ -1,0 +1,25 @@
+In order to run this software please execute the program in the following order.
+
+First:
+
+Run the Main class via your command line.
+
+The first arguement is the full path to the file for reading.
+
+The second argument is the full path where you'd like the report of the text document to be written to.
+
+The third arguement is the length of the text file(Eg. 13486)
+
+Run program example:
+
+java Main.class path_to_file out_file_path length_file
+
+Second you will run the ReportOut java class via your command line.
+
+The first arguement is the full path to the report.
+
+The second arguement is the length of the report(In this case use 56)
+
+Run program example:
+
+java ReportOut.class path_to_report 56

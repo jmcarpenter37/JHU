@@ -1,7 +1,7 @@
 /**
  * @author John Carpenter
  * The RowHandler class handles the rows that are read in by the DataPrepper class.
- * Since there is structure to the text file we can parse up the text file by columns. 
+ * Since there is structure to the text file we can parse up the text file by columns.
  */
 public class RowHandler
 {

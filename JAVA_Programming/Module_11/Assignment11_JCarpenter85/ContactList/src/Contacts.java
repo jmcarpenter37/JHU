@@ -1,17 +1,7 @@
-import javax.print.DocFlavor;
-import java.net.SecureCacheResponse;
 import java.util.*;
 import java.io.*;
-import java.util.stream.StreamSupport;
 
 public class Contacts {
-    /*
-    Use one of the Map classes to implement a contact list.
-    The contact list needs to contain:
-    last name, first name, phone number, and email
-
-    The list needs to be stored on the computer
-     */
     public static void main(String args[]) {
         String action;
         try {
@@ -21,11 +11,9 @@ public class Contacts {
             Scanner scan_object = new Scanner(System.in);
             String file_to_write = scan_object.next();
             System.out.println("Attempting to open: " + file_to_write);
-            BufferedWriter write_file = new BufferedWriter(new FileWriter(file_to_write,false));
+            BufferedWriter write_file = new BufferedWriter(new FileWriter(file_to_write, false));
             //BufferedWriter write_file = new BufferedWriter(new FileWriter("C:\\Users\\black\\Desktop\\My_Contacts.txt",false));
             do {
-                // Initialize <ArrayList>
-                // The arraylist will store the first name, phone, email
                 ArrayList<String> values = new ArrayList<>();
                 System.out.println("What would you like to do?");
                 System.out.println("Add an entry? Add");
@@ -46,29 +34,22 @@ public class Contacts {
                     String phone = input_object.next();
                     System.out.println("Email address: ");
                     String email = input_object.next();
-                    // add the data to the Map
                     values.add(first_name + " " + phone + " " + email);
                     map.put(last_name, values);
-
                 }
                 if (action.matches("Remove")) {
-                /*
-                Prob just need to find the key and remove it
-                 */
                     System.out.println("Give the last name of the person you want to remove from your contact list: ");
                     Scanner scan = new Scanner(System.in);
                     String name_to_remove = scan.next();
                     System.out.println("Removing: " + name_to_remove);
                     map.remove(name_to_remove);
                 }
-                if (action.matches("Show"))
-                {
+                if (action.matches("Show")) {
                     System.out.println("Your contact list:");
                     System.out.println();
                     // Read the file line by line
-                    for(Map.Entry pair : map.entrySet())
-                    {
-                        System.out.println(pair.getKey() + " " + pair.getValue().toString().replace("]","").replace("[","") + "\n");
+                    for (Map.Entry pair : map.entrySet()) {
+                        System.out.println(pair.getKey() + " " + pair.getValue().toString().replace("]", "").replace("[", "") + "\n");
                     }
 
                 }

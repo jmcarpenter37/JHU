@@ -16,7 +16,7 @@ public class Contacts {
             do {
                 ArrayList<String> values = new ArrayList<>();
                 System.out.println("What would you like to do?");
-                System.out.println("Add an entry? Add");
+                System.out.println("Add an entry? Type Add");
                 System.out.println("Remove an entry? Type Remove");
                 System.out.println("Print the contact list? Type Show");
                 System.out.println("Quit the program? Type Quit");
